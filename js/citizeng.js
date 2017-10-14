@@ -1,8 +1,12 @@
 function initlogin() {
   document.title = "Page de Connexion";
 
-  document.getElementById("divheader").className = "loginheader";
-  document.getElementById("divheader").innerHTML = "Connexion";
+  elemdivloginheader.style.display  = "block";
+  elemdivloginbody.style.display    = "block";
+  elemdivloginfooter.style.display  = "block";
+  
+  elemdivloginheader.className = "loginheader";
+  elemdivloginheader.innerHTML = "Connexion";
   
   document.getElementById("spanusername").style.display = "none";
   document.getElementById("inputusername").className = "logininputname";
@@ -46,6 +50,11 @@ function initadmin() {
 
 function init404() {
   document.title = "Probème d'Accès";
+
+  elemdiv404header.style.display  = "block";
+  elemdiv404body.style.display    = "block";
+  elemdiv404footer.style.display  = "block";
+  
   document.getElementById("divheader").style.display="none";
   document.getElementById("divbody").innerHTML = "<h1>Erreur d'accès</h1>";
   document.getElementById("divfooter").innerHTML = "<a href='/'>Acceuil</a>";
