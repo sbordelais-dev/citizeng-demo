@@ -3,7 +3,7 @@ var citizeng  = require('citizeng');
 var path      = require('path');
 
 // Initialize the server.
-citizeng.init(3030, "root", "root", "rootAtroot.com", __dirname);
+citizeng.init(3030, "root", "root", "root@root.com", __dirname);
 
 // Declare main page route.
 citizeng.get  ( "/"
